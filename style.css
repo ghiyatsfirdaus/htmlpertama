@@ -1,0 +1,218 @@
+```css
+/* 
+   4. COMMENT
+   CSS untuk website CV pribadi
+*/
+
+
+/* 5. SELECTOR */
+/* Selector universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* 2. COLOR */
+body {
+    background-color: #f1f5f9;
+    color: #1e293b;
+    font-family: Arial, sans-serif;
+}
+
+
+/* HEADER */
+.header {
+    background-color: #0f172a;
+    color: white;
+    padding: 25px 8%;
+}
+
+
+/* 3. BOX MODEL */
+.profile {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Foto profil */
+.foto {
+    width: 80px;
+    height: 80px;
+
+    background-color: #38bdf8;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 35px;
+    font-weight: bold;
+
+    margin-right: 20px;
+}
+
+
+/* 6. DISPLAY MODE */
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Menu */
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #38bdf8;
+}
+
+
+/* Container */
+.container {
+    width: 85%;
+    max-width: 1000px;
+
+    margin: 30px auto;
+}
+
+
+/* Card */
+.card {
+    background-color: white;
+
+    padding: 25px;
+    margin-bottom: 20px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+.card h2 {
+    color: #0f172a;
+    margin-bottom: 15px;
+
+    border-left: 5px solid #38bdf8;
+    padding-left: 10px;
+}
+
+
+/* 8. GRID */
+.grid-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+/* Skill */
+.skill-list {
+    list-style: none;
+}
+
+.skill-list li {
+    background-color: #e0f2fe;
+
+    margin: 8px 0;
+    padding: 10px;
+
+    border-radius: 6px;
+}
+
+
+/* Pengalaman dan pendidikan */
+.item {
+    margin-top: 10px;
+}
+
+.item h3 {
+    margin-bottom: 5px;
+}
+
+
+/* 7. POSITION */
+.badge {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    background-color: #0f172a;
+    color: white;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+
+    background-color: #0f172a;
+    color: white;
+
+    padding: 20px;
+}
+
+
+/* 9. MEDIA QUERY */
+/* Tampilan untuk layar HP */
+@media (max-width: 768px) {
+
+    .header {
+        padding: 20px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    /* Grid berubah menjadi 1 kolom */
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+```
